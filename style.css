@@ -28,8 +28,8 @@ input {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: calc(100% - 22px); /* Adjust width to account for padding and border */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: calc(100% - 22px); 
+    box-sizing: border-box; 
 }
 
 button {
@@ -55,5 +55,5 @@ button:hover {
     color: #d8000c;
     background-color: #ffbaba;
     border-radius: 4px;
-    display: none; /* Initially hide the feedback div */
+    display: none; 
 }
