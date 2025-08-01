@@ -1,8 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById('registration-form');
     const feedbackDiv = document.getElementById('form-feedback');
+    if (!form) {
+        console.error('Form not found!');
+        return;
+    }
+    if (!feedbackDiv) {
+        console.error('Feedback div not found!');
+        return;
+    }
     form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        event.preventDefault(); 
         const username = document.getElementById('username').value.trim();
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value.trim();
@@ -30,3 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
